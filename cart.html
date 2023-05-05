@@ -6,23 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="base.css" rel="stylesheet" />
-    <script src="shoe.js" async></script>
     <script src="cart.js" async></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li class="navbar" id="active"><a href="#">New Arrivals</a></li>
+                <li class="navbar"><a href="index.html">New Arrivals</a></li>
                 <li class="navbar"><a href="#">Women</a></li>
                 <li class="navbar"><a href="#">Men</a></li>
                 <li class="navbar"><a href="#">SALE!</a></li>
             </ul>
         </nav>
     </header>
-    <p><h1>Let's Tie Up Some Loose Ends</p>
-    <p><h3>Shoe: </h3><h3 class="shoe"></h3></p>
-    <p><h3>Pick your Size</h3></p>
-    <P><h3>Insurance </h3>($20 per Year)</P>
+    <p><h1>Let's Tie Up Some Loose Ends</h1></p>
+    <section id="order">
+    <form id="checkout" name="checkout">
+    <label for="shoe">Shoe: </label>
+        <select name="shoe" id="shoe">
+            <option value="95">OPEN TOED HIGH TOPS ($95)</option>
+            <option value="150">HIGH STYLE HIGH TOPS ($150)</option>
+            <option value="110">LOW-TOP RUNNERS ($110)</option>
+        </select>
+        <br>
+    <label for="size">Pick your Size</label>
+        <select name="size" id="size">
+            <option >7</option>
+            <option >8</option>
+            <option >9</option>
+            <option >10</option>
+            <option >11</option>
+            <option >12</option>
+            <option >13</option>
+            <option >14</option>
+            <option >15</option>
+            <option >16</option>
+        </select>
+        <br>
+    <label for="insurance">Insurance ($20 per Year)</label>
+        <select name="insurance" id="insurance">
+            <option value="0">No Insurance</option>
+            <option value="20">1 Year</option>
+            <option value="40">2 Years</option>
+            <option value="60">3 Years</option>
+        </select>
+        <br>
+    <label for="shipping">Shipping Speed</label>
+    <select name="shipping" id="shipping">
+        <option value="0">Standard ($0)</option>
+        <option value="20">2-Day Shipping ($25)</option>
+        <option value="40">Next Day Delivery ($60)</option>
+    </select>
+    <p>Total: </p>
+    </form>
+    </section>
 </body>
 </html>
