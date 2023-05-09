@@ -16,10 +16,11 @@
                 <li class="navbar"><a href="#">Women</a></li>
                 <li class="navbar"><a href="#">Men</a></li>
                 <li class="navbar"><a href="#">SALE!</a></li>
+                <input type="text" placeholder="Search...">
             </ul>
         </nav>
     </header>
-    <p><h1>Let's Tie Up Some Loose Ends</h1></p>
+    <p><h1 id="tie">Let's Tie Up Some Loose Ends</h1></p>
     <section id="order">
     <form id="checkout" name="checkout">
     <label for="shoe">Shoe: </label>
@@ -51,14 +52,15 @@
             <option value="60">3 Years</option>
         </select>
         <br>
-    <label for="shipping">Shipping Speed</label>
-    <select name="shipping" id="shipping">
-        <option value="0">Standard ($0)</option>
-        <option value="20">2-Day Shipping ($25)</option>
-        <option value="40">Next Day Delivery ($60)</option>
-    </select>
-    <p>Total: </p>
+    <fieldset>
+        <legend>Shipping Speed</legend>
+        <label><input type="radio" id="speed_0" name="shipping" value="0" checked />Standard ($0)</label>
+        <label><input type="radio" id="speed_1" name="shipping" value="25" />2-Day Shipping ($25)</label>   
+        <label><input type="radio" id="speed_2" name="shipping" value="60" />Next Day Delivery ($60)</label> 
+     </fieldset>
+    <p>Total: $<input type="text" name="total" id="total" size="10" readonly /></p>
     </form>
     </section>
+    <p><a href="#" class="buy">FINISH CHECKOUT</a></p>
 </body>
 </html>
