@@ -27,5 +27,4 @@ function calculate() {
 
     var total = parseFloat(shoeCost) + parseFloat(insuranceCost) + parseFloat(shippingCost)
     checkout.elements.total.value = total
-    console.log(shoeCost, insuranceCost, shippingCost, total)
 }

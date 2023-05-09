@@ -4,7 +4,6 @@
     display: inline;
     background-color: blue;
     padding: 10px;
-    margin: 0px;
 }
 
 .buy {
@@ -24,5 +23,26 @@ a{
 .logo {
     max-width: 5%;
     height: 5%;
-    display: flex;
+    display: inline flex;
+}
+
+.cart {
+    max-width: 5%;
+    height: 5%;
+    display: inline flex;
+    align-content: right;
+}
+
+.shoe {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.shoe > img {
+    width: 222px;
+    height: auto;
 }
